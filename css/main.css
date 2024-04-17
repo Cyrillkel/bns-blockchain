@@ -177,6 +177,7 @@ a:hover {
 .wrapper {
   margin: 0 auto;
   max-width: 1440px;
+  height: 100%;
 }
 
 .container {
@@ -187,12 +188,15 @@ a:hover {
 
 .header {
   display: flex;
-  flex-direction: column;
-  min-height: 1130px;
-  background: url("../../img/header/header-bg.png");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  position: relative;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-shadow: 0px 2px 4px rgb(0, 0, 0);
+  width: 100%;
+  max-height: 98px;
 }
 
 .header__top-logo {
@@ -203,20 +207,28 @@ a:hover {
   opacity: 1;
 }
 
+.nav__list li {
+  position: relative;
+}
+
+.nav__list li:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2447FF;
+  transition: all 0.2s ease-in;
+  left: 0;
+  top: -100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .header__top {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  max-height: 98px;
-}
-
-.header__navigation {
-  width: 100%;
-  background-color: #000000;
-  position: fixed;
-  z-index: 9999;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .header__top-logo {
@@ -243,50 +255,56 @@ a:hover {
   opacity: 0.8;
 }
 
-.header__hiro-top {
+.hiro {
+  display: flex;
+  flex-direction: column;
+  min-height: 1130px;
+  background: url("../../img/header/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 125%;
+  margin-top: 70px;
+}
+
+.hiro__hiro-top {
+  font-size: 2.25em;
+  font-family: "Gilroy";
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
   margin-bottom: 32px;
-  margin-top: 180px;
 }
 
-.header__hiro-top {
-  font-size: 2.25em;
-  font-family: "Gilroy";
-  padding-bottom: 8px;
-}
-
-.header__hiro-title {
+.hiro__hiro-title {
   font-weight: 600;
 }
 
-.header__hiro-text {
+.hiro__hiro-text {
   opacity: 0.6;
   font-weight: 500;
 }
 
-.header__hori-icon {
+.hiro__hiro-icon {
   margin-right: 8px;
 }
 
-.header__subtitle {
+.hiro__subtitle {
   font-size: 1.5em;
   text-align: center;
   font-weight: 400;
 }
 
-.header__subtitle-opacity {
+.hiro__subtitle-opacity {
   opacity: 0.6;
 }
 
-.header__highlighted-text {
+.hiro__highlighted-text {
   opacity: 1;
   color: white;
 }
 
-.header__hiro-buttons {
+.hiro__hiro-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,15 +312,15 @@ a:hover {
   z-index: 1;
 }
 
-.header__hiro-button {
+.hiro__hiro-button {
   opacity: 0.8;
 }
 
-.header__hiro-button:nth-child(2) {
+.hiro__hiro-button:nth-child(2) {
   margin-left: -40px;
 }
 
-.header__hiro-button:nth-child(3) {
+.hiro__hiro-button:nth-child(3) {
   margin-right: 50px;
 }
 
@@ -312,39 +330,47 @@ a:hover {
   z-index: 3;
 }
 
-.header__ellipse-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
+.hiro-container {
+  position: relative;
+  width: 100%;
 }
 
-.header__ellipse-right {
+.hiro__ellipse-left {
   position: absolute;
-  right: 0px;
+  top: -250px;
+  left: -450px;
   bottom: 0;
+  z-index: -1;
+}
+
+.hiro__ellipse-center {
+  position: absolute;
+  top: -200px;
+  left: 40px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hiro__ellipse-right {
+  position: absolute;
+  top: -70px;
+  right: -500px;
+  bottom: 300px;
+  opacity: 0.9;
+  z-index: 0;
+  z-index: 1;
+}
+
+.hiro__ellipse-right-second {
+  position: absolute;
+  top: -170px;
+  right: -700px;
+  bottom: 300px;
   opacity: 0.9;
   z-index: 0;
   z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.header__ellipse-right-second {
-  position: absolute;
-  right: 0px;
-  opacity: 0.9;
-  z-index: 0;
-  z-index: -1;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.header {
-  margin-bottom: 100px;
+  opacity: 0.5;
 }
 
 .about {
