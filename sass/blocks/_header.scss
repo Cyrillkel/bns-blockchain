@@ -1,0 +1,186 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  min-height: 1130px;
+  background: url('../../img/header/header-bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  position: relative;
+}
+
+
+.header__top-logo {
+  display: flex;
+}
+
+.header__logo {
+  opacity: 1;
+}
+
+// .header__nav nav {
+//   display: flex;
+//   flex-direction: ;
+// }
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-height: 98px;
+}
+
+.header__navigation {
+  width: 100%;
+  background-color: $dark;
+  position: fixed;
+  z-index: 9999;
+  // margin-bottom: 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header__top-logo {
+  display: flex;
+  gap: 1em;
+  margin-right: 29px;
+}
+
+.header__title {
+  font-family: $font-secondary;
+}
+
+.header__logo-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.header__top-descr {
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+.header-button {
+  opacity: 0.8;
+}
+
+.header__hiro-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  margin-top: 180px;
+
+}
+
+.header__hiro-top {
+  font-size: 2.25em;
+  font-family: "Gilroy";
+  padding-bottom: 8px;
+}
+
+.header__hiro-title {
+  font-weight: 600;
+}
+
+.header__hiro-text {
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.header__hori-icon {
+  margin-right: 8px;
+}
+
+.header__subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.header__subtitle-opacity {
+  opacity: 0.6;
+}
+
+.header__highlighted-text {
+  opacity: 1;
+  color: white;
+}
+
+.header__hiro-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  // gap: 1.5empx;
+  z-index: 1;
+
+}
+
+.header__hiro-button {
+  opacity: 0.8;
+
+}
+
+.header__hiro-button:nth-child(2) {
+  margin-left: -40px;
+}
+
+.header__hiro-button:nth-child(3) {
+  margin-right: 50px;
+}
+
+.header-hiro {
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 3;
+}
+
+
+.header__ellipse-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.header__ellipse-right {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  opacity: 0.9;
+  z-index: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.header__ellipse-right-second {
+  position: absolute;
+  right: 0px;
+  opacity: 0.9;
+  z-index: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+
+// about
+
+.about {
+  display: flex;
+}
+
+.about__title {
+  font-family: $font-main;
+  font-size: 2.25em;
+  font-weight: 500;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
