@@ -196,6 +196,12 @@ a:hover {
   margin-bottom: 32px;
 }
 
+.content-text {
+  font-family: "Gilroy";
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -465,6 +471,7 @@ a:hover {
 
 .advantages {
   min-height: 901px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .advantages__content {
@@ -500,12 +507,6 @@ a:hover {
 
 .advantages__content-descr {
   align-self: end;
-}
-
-.content-text {
-  font-family: "Gilroy";
-  font-size: 1.25em;
-  font-weight: 400;
 }
 
 .advantages__content-elem_three {
@@ -593,4 +594,32 @@ a:hover {
   left: 0;
   background-color: rgba(255, 255, 255, 0.06);
   z-index: -1;
+}
+
+.ecosystem {
+  background-image: url("../../img/ecosystem/ecosystem-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ecosystem__title {
+  text-align: left;
+}
+
+.ecosystem-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+}
+
+.ecosystem__image {
+  justify-self: center;
+}
+
+.ecosystem__text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 40px;
 }/*# sourceMappingURL=main.css.map */

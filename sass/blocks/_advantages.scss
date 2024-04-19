@@ -1,5 +1,6 @@
 .advantages {
   min-height: 901px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .advantages__content {
@@ -36,13 +37,6 @@
 
 .advantages__content-descr {
   align-self: end;
-}
-
-.content-text {
-  font-family: $font-main;
-  font-size: 1.25em;
-  font-weight: 400;
-
 }
 
 .advantages__content-elem_three {

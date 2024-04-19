@@ -1,0 +1,29 @@
+ .ecosystem {
+   background-image: url('../../img/ecosystem/ecosystem-bg.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .ecosystem__title {
+   text-align: left;
+   // border: 1px solid red;
+ }
+
+ .ecosystem-container {
+   //  position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 40px;
+ }
+
+  .ecosystem__image {
+    justify-self: center;
+  }
+
+  .ecosystem__text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+  }
