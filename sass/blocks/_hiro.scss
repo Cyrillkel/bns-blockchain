@@ -1,0 +1,160 @@
+.hiro {
+  display: flex;
+  flex-direction: column;
+  //   width: 100%;
+  // max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // position: relative;
+  // align-items: center;
+  min-height: 900px;
+
+  // height: 100vh;
+
+  // min-height: calc(100vh - 5px);
+
+  background: url('../../img/header/header-bg.png');
+  background-repeat: no-repeat;
+
+  // background-position: 50%;
+
+  background-position: 50% 50%;
+  background-size: contain;
+  // background-position: 50% 60%;
+  padding-top: 70px;
+}
+
+// .hero__bg {
+//   position: absolute;
+//   width: 100%;
+// }
+
+// .hero__bg {
+//   margin-top: -500px;
+// }
+
+.hiro__hiro-top {
+  font-size: 2.25em;
+  font-family: "Gilroy";
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hiro__hiro-title {
+  font-weight: 600;
+}
+
+.title-text {
+  font-weight: 500;
+}
+
+.hiro__hiro-icon {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.hiro__subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.text-opacity {
+  opacity: 0.6;
+}
+
+.hiro__highlighted-text {
+  opacity: 1;
+  color: $white;
+}
+
+.hiro__hiro-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  // gap: 1.5empx;
+  z-index: 1;
+}
+
+.hiro__hiro-button {
+  opacity: 0.8;
+  z-index: 9;
+}
+
+.hiro__hiro-button:nth-child(2) {
+  margin-left: -40px;
+}
+
+.hiro__hiro-button:nth-child(3) {
+  margin-right: 50px;
+}
+
+// .header-hiro {
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   z-index: 3;
+// }
+
+.hiro-container {
+  position: relative;
+  width: 100%;
+
+}
+
+// .hero__bg {
+//   position: absolute;
+//   width: 100%;
+//   top: 0;
+//   bottom: 500px;
+// }
+
+.hiro__bg-elements {
+  position: absolute;
+  bottom: -265px;
+  left: 45px;
+}
+
+.hiro__ellipse-left {
+  position: absolute;
+  top: -250px;
+  left: -450px;
+  bottom: 0;
+  z-index: -1;
+  overflow-y: hidden;
+}
+
+.hiro__ellipse-center {
+  position: absolute;
+  top: -200px;
+  left: 40px;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hiro__ellipse-right {
+  position: absolute;
+  top: -70px;
+  right: -500px;
+  bottom: 300px;
+  opacity: 0.9;
+  z-index: -1;
+  overflow-y: hidden;
+}
+
+.hiro__ellipse-right-second {
+  position: absolute;
+  top: -170px;
+  right: -700px;
+  bottom: 300px;
+  opacity: 0.9;
+  z-index: 0;
+  z-index: -1;
+  opacity: 0.5;
+  overflow-y: hidden;
+}

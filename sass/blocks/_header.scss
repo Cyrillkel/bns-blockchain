@@ -7,7 +7,7 @@
   z-index: 9999;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
-  width: 100%;
+  // width: 100%;
   max-height: 98px;
 }
 
@@ -21,6 +21,7 @@
 
 .nav__list li {
   position: relative;
+  font-weight: 600;
 }
 
 .nav__list li:hover::after {
@@ -72,146 +73,4 @@
   opacity: 0.8;
 }
 
-.hiro {
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  min-height: 1130px;
-  // min-height: calc(100vh - 10px);
-  background: url('../../img/header/header-bg.png');
-  background-repeat: no-repeat;
-  background-position: 50% 125%;
-  // background-position: 50% 60%;
-  margin-top: 70px;
-}
 
-.hiro__hiro-top {
-  font-size: 2.25em;
-  font-family: "Gilroy";
-  padding-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.hiro__hiro-title {
-  font-weight: 600;
-}
-
-.hiro__hiro-text {
-  opacity: 0.6;
-  font-weight: 500;
-}
-
-.hiro__hiro-icon {
-  margin-right: 8px;
-}
-
-.hiro__subtitle {
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: 400;
-}
-
-.hiro__subtitle-opacity {
-  opacity: 0.6;
-}
-
-.hiro__highlighted-text {
-  opacity: 1;
-  color: white;
-}
-
-.hiro__hiro-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  // gap: 1.5empx;
-  z-index: 1;
-
-}
-
-.hiro__hiro-button {
-  opacity: 0.8;
-
-}
-
-.hiro__hiro-button:nth-child(2) {
-  margin-left: -40px;
-}
-
-.hiro__hiro-button:nth-child(3) {
-  margin-right: 50px;
-}
-
-.header-hiro {
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 3;
-}
-
-.hiro-container {
-  position: relative;
-  width: 100%;
-}
-
-.hiro__ellipse-left {
-  position: absolute;
-  top: -250px;
-  left: -450px;
-  bottom: 0;
-  z-index: -1;
-}
-
-.hiro__ellipse-center {
-  position: absolute;
-  top: -200px;
-  left: 40px;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.hiro__ellipse-right {
-  position: absolute;
-  top: -70px;
-  right: -500px;
-  bottom: 300px;
-  opacity: 0.9;
-  z-index: 0;
-  z-index: 1;
-
-}
-
-.hiro__ellipse-right-second {
-  position: absolute;
-  top: -170px;
-  right: -700px;
-  bottom: 300px;
-  opacity: 0.9;
-  z-index: 0;
-  z-index: -1;
-  opacity: 0.5;
-}
-
-// .header {
-//   margin-bottom: 100px;
-// }
-
-
-// about
-
-.about {
-  display: flex;
-}
-
-.about__title {
-  font-family: $font-main;
-  font-size: 2.25em;
-  font-weight: 500;
-  margin-bottom: 32px;
-  text-transform: uppercase;
-}
