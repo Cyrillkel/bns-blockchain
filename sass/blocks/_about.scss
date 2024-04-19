@@ -1,6 +1,7 @@
 .about {
   background-image: url('../../img/about/about-bg.png');
-  min-height: 100vh;
+  // min-height: calc(100vh - 200px);
+
   background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -12,9 +13,9 @@
 }
 
 .about-container {
+  height: calc(100vh - 200px); /* Изменено на height */
   padding: 0 10px;
 }
-
 
 .about__item {
   position: relative;

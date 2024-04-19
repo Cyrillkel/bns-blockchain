@@ -102,6 +102,9 @@
 //   max-width: 100%;
 //   overflow-x: hidden;
 // }
+// html,body {
+//   height: 100%;
+// }
 
 body {
   font-family: $font-main;
@@ -125,7 +128,6 @@ a:hover {
   margin: 0 auto;
   // padding: 0 15px;
   max-width: 1440px;
-  height: 100%;
 }
 
 .container {
