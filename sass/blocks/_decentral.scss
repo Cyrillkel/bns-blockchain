@@ -1,0 +1,86 @@
+.decetralisation {
+  background-image: url('../../img/decentralization/decentralisation-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 608px;
+}
+
+.decetralisation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  // display: grid;
+  // grid-template-columns: repeat(6, 1fr);
+  // grid-template-rows: 1fr 1fr 1fr;
+  // border: 1px solid red;
+}
+
+.descr-decetral {
+  max-width: 700px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.decetralisation__text-blue {
+  color: $accent-secondary;
+}
+
+.decetralisation__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 492px;
+  padding: 24px;
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.decetralisation__item-text {
+  max-width: 372px;
+  text-align: start;
+  margin-left: 24px;
+}
+
+.decetralisation__item::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  ;
+  /* Наследуем фоновый цвет и изображение от родительского элемента */
+  backdrop-filter: blur(5px);
+  /* Замените 5px на желаемую величину размытия */
+  z-index: -1;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  // background-color: $dark;
+}
+
+
+
+// .title-decetral {
+//   align-self: center;
+//   grid-column: 2/6;
+// }
+
+// .descr-decetral {
+//   grid-column: 2/6;
+//   grid-row: 2/2;
+//   text-align: center;
+// }
+
+// .decetralisation__item {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows: 1fr;
+//   grid-column: 3/6;
+//   grid-row: 3/3;
+// }
