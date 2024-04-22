@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 
   <main>
     <section class="hiro">
-      <div class=" container hiro-container">
+      <div class="container hiro-container">
         <img class="hiro__ellipse-left" src="./img/header/ellipse-left.png" alt="ellipse">
         <img class="hiro__ellipse-right" src="./img/header/ellipse-right.png" alt="ellipse">
         <img class="hiro__ellipse-center" src="./img/header/ellipse-center.png" alt="ellipse">
@@ -327,34 +327,316 @@
     <section class="application">
       <div class="container application-container">
         <h2 class="title title-text application__title">
-          <span class="text-opacity">Area of</span> application
+          <span class="text-opacity">Area of </span>&nbsp; application
         </h2>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="./img/advantages/computer.png"></div>
-            <div class="swiper-slide"><img src="./img/advantages/certifi.png"></div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/finance.png">
+                <h3 class="application-card__title">Finance</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Analysis and prediction of the exchange rates, raw
+                      material prices, demand level, sales volume
+                    </li>
+                    <li class="application-card__description-item">
+                      Automatic trading on cryptocurrency, currency, stock
+                      and commodity exchanges
+                    </li>
+                    <li class="application-card__description-item">
+                      Bankruptcy prediction
+                    </li>
+                    <li class="application-card__description-item">
+                      Identification of under and overvalued companies
+                    </li>
+                    <li class="application-card__description-item">
+                      Reading and recognition of cheques and documents
+                    </li>
+                    <li class="application-card__description-item">
+                      Analysis of payment card transactions
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/production.png">
+                <h3 class="application-card__title">Production</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Production automation: smart, self-learning production control systems
+                    </li>
+                    <li class="application-card__description-item">
+                      Prevention of emergency situations
+                    </li>
+                    <li class="application-card__description-item">
+                      Product quality control
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/medicine.png">
+                <h3 class="application-card__title">Medicine</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Disease diagnosis
+                    </li>
+                    <li class="application-card__description-item">
+                      Medical image processing
+                    </li>
+                    <li class="application-card__description-item">
+                      Analysis of patient's condition
+                    </li>
+                    <li class="application-card__description-item">
+                      Noise reduction of equipment
+                    </li>
+                    <li class="application-card__description-item">
+                      Analysis of patient's condition
+                    </li>
+                    <li class="application-card__description-item">
+                      Forecasting outcomes of different therapies
+                    </li>
+                    <li class="application-card__description-item">
+                      Analysis of treatment effectiveness 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/robotic.png">
+                <h3 class="application-card__title">Robotics</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Recognition of scene, objects and obstacles before robot
+                    </li>
+                    <li class="application-card__description-item">
+                      Routing, manipulator control, maintaining balance
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/internet.png">
+                <h3 class="application-card__title">
+                  <p class="title-text">Telecommunications <span class="opacity">&</span> Internet</p></span>
+                </h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Trained autopilots
+                    </li>
+                    <li class="application-card__description-item">
+                      Recognition of radar signals, traffic signs, road markings and other details
+                    </li>
+                    <li class="application-card__description-item">
+                      Adaptive piloting of unmanned aerial and ground vehicles in unusual situations
+                    </li>
+                    <li class="application-card__description-item">
+                      Optimization of logistic routes 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/aviation.png">
+                <h3 class="application-card__title">Aviation & land transport</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Trained autopilots
+                    </li>
+                    <li class="application-card__description-item">
+                      Recognition of radar signals, traffic signs, road markings and other details
+                    </li>
+                    <li class="application-card__description-item">
+                      Adaptive piloting of unmanned aerial and ground vehicles in unusual situations  
+                    </li>
+                    <li class="application-card__description-item">
+                      Optimization of logistic routes  
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/data.png">
+                <h3 class="application-card__title">Data processing</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Recognition of handwritten texts; scanned mail, payment, financial and accounting documents
+                    </li>
+                    <li class="application-card__description-item">
+                      Speech recognition, speech-to-text conversion
+                    </li>
+                    <li class="application-card__description-item">
+                      Smart home system 
+                    </li>
+                    <li class="application-card__description-item">
+                      Machine vision
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/security.png">
+                <h3 class="application-card__title">Security</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Smart security systems
+                    </li>
+                    <li class="application-card__description-item">
+                      Facial recognition
+                    </li>
+                    <li class="application-card__description-item">
+                      Identification by fingerprint, voice, signature or face
+                    </li>
+                    <li class="application-card__description-item">
+                      Machine vision
+                    </li>
+                    <li class="application-card__description-item">
+                      License plate recognition
+                    </li>
+                    <li class="application-card__description-item">
+                      Monitoring of data flows in computer networks and intrusion detection, counterfeit detection,
+                      analysis of data from video and other sensors
+                    </li>
+                    <li class="application-card__description-item">
+                      Analysis of aerospace images
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/sociological.png">
+                <h3 class="application-card__title">Sociological technologies</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Poll analysis, prediction of ratings dynamics
+                    </li>
+                    <li class="application-card__description-item">
+                      Identification of significant factors
+                    </li>
+                    <li class="application-card__description-item">
+                      Clustering of voters
+                    </li>
+                    <li class="application-card__description-item">
+                      Research and visualization of population dynamics
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/game.png">
+                <h3 class="application-card__title">Entertainment & recreation</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Creation of AI for games
+                    </li>
+                    <li class="application-card__description-item">
+                      Entertainment apps
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="application-card">
+                <img class="application-card__image" src="./img/application/geological.png">
+                <h3 class="application-card__title">Geological exploration</h3>
+                <div class="application-card__description">
+                  <ul class="application-card__description-items">
+                    <li class="application-card__description-item">
+                      Analysis of seismic data 
+                    </li>
+                    <li class="application-card__description-item">
+                      Associative methods of mineral exploration, mineral resource estimation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
       </div>
 
       </div>
     </section>
+
+    <section class="presentation">
+      <div class="presentation__bg">
+
+        <img class="presentation__bg-img" src="./img/presentation/presentation-bg.png" alt="presentation-bg">
+        <!-- <img class="presentation__element-img" src="./img/presentation/presentation-element.png"
+          alt="presentation-element"> -->
+      </div>
+      <div class="container presentation-container">
+        <h2 class="title title-text presentation__title">
+          video presentation
+          <span class="text-opacity">about us
+        </h2>
+        <!-- <div class="video-item"> -->
+        <div class="video-container">
+          <img class="presentation-container__element-left" src="./img/presentation/left-ellipse-top.png" alt="ellipse">
+          <img class="presentation-container__element-left-top" src="./img/presentation/left-ellipse-top.png" alt="ellipse">
+          <img class="presentation-container__element-left-bottom" src="./img/presentation/left-ellipse-bottom.png" alt="ellipse">
+          <img class="presentation-container__bg-element" src="./img/presentation/video-element.png"
+            alt="video-element">
+          <img class="video-container__bg item-bg" src="./img/presentation/presentation-video-bg.png" alt="video">
+          <div class="video" data-src="https://www.youtube.com/embed/1jzROE6EhxM?si=Ylm0WyRp_po3evZ0?autoplay=1"
+            video-autoplay="autoplay">
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      </div>
+    </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swiper-init.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,83 @@
+.application-container {
+  position: relative;
+}
+
+
+.swiper-wrapper {
+  margin-bottom: 58px;
+}
+
+.swiper-slide {
+
+ max-width: 444px;
+  max-height: 564px;
+  min-width: 444px;
+  min-height: 564px;
+  padding: 16px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swiper-slide:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  ;
+  /* Наследуем фоновый цвет и изображение от родительского элемента */
+  backdrop-filter: blur(5px);
+  /* Замените 5px на желаемую величину размытия */
+  z-index: -1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Стили для кружков пагинации */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  /* Расположение снизу */
+  left: 50%;
+  /* Центрируем по горизонтали */
+  transform: translateX(-50%);
+  /* Центрируем по горизонтали */
+}
+
+.swiper-pagination-bullet {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  background-color: $white !important;
+  opacity: 0.6 !important;
+  /* Цвет активного кружка */
+}
+
+/* Стили для активного кружка */
+.swiper-pagination-bullet-active {
+  width: 67px !important;
+  height: 16px !important;
+  border-radius: 10px !important;
+  background-color: $white !important;
+  opacity: 1 !important;
+  /* Цвет активного кружка */
+}
+
+/* Стили для неактивных кружков */
+.swiper-pagination-bullet {
+  width: 10px;
+  /* Ширина кружка */
+  height: 10px;
+  /* Высота кружка */
+  background-color: #ccc;
+  /* Цвет неактивного кружка */
+  margin: 0 5px;
+  /* Расстояние между кружками */
+  border-radius: 50%;
+  /* Круглые кружки */
+}

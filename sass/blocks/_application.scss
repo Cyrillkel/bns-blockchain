@@ -3,3 +3,35 @@
   justify-content: flex-start;
 }
 
+.application {
+  padding: 50px 0;
+  margin-bottom: 100px;
+}
+
+.application-card {
+
+
+  .application-card__image {
+    margin-bottom: 24px;
+  }
+
+  .application-card__title {
+    margin-bottom: 24px;
+  }
+
+  .application-card__description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .application-card__description-item {
+    font-family: $font-main;
+    opacity: 0.5;
+    line-height: 1.3em;
+  }
+
+  ul {
+    color: $white;
+  }
+}
