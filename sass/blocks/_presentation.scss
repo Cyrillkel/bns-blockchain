@@ -3,6 +3,7 @@
   padding-bottom: 95px;
   margin-bottom: 100px;
 
+
   .presentation__bg-img {
     // display: block;
     position: absolute;
@@ -31,10 +32,6 @@
 
 
 // video 
-
-
-.presentation-container {}
-
 
 
 .video-container {
@@ -92,17 +89,17 @@
   left: 10%;
   right: 10%;
   bottom: 10%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .video-container iframe {
   position: absolute;
-  width: 80%;
+  width: 81%;
   height: 80%;
   top: 10%;
   left: 10%;
   right: 10%;
   bottom: 10%;
+  border: 2px solid $dark;
 }
 
 .video {

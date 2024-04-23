@@ -837,17 +837,17 @@ a:hover {
   left: 10%;
   right: 10%;
   bottom: 10%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .video-container iframe {
   position: absolute;
-  width: 80%;
+  width: 81%;
   height: 80%;
   top: 10%;
   left: 10%;
   right: 10%;
   bottom: 10%;
+  border: 2px solid #000000;
 }
 
 .video {
@@ -862,6 +862,59 @@ a:hover {
 .video:hover {
   cursor: pointer;
   background-size: 12%;
+}
+
+.roadmap .roadmap-container {
+  position: relative;
+  width: 100%;
+}
+.roadmap .roadmap__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.roadmap .roadmap__element-top {
+  position: absolute;
+  z-index: -2;
+  top: -150px;
+  left: 20%;
+}
+.roadmap .roadmap__element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  z-index: -1;
+}
+.roadmap .roadmap__element-bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 50%;
+}
+.roadmap .roadmap__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roadmap .roadmap-title {
+  z-index: 1;
+}
+.roadmap .roadmap__logo {
+  position: relative;
+  max-width: 300px;
+  z-index: 1;
+}
+.roadmap .roadmap-slogan {
+  position: absolute;
+  font-size: 2em;
+  top: 75%;
+  z-index: 2;
 }
 
 .application-container {

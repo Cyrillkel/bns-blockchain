@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
     video.classList.add("ready");
 
-    let src = video.dataset.src;
+    let src = video.dataset.src + "?autoplay=1";
 
     video.insertAdjacentHTML(
       "afterbegin",
