@@ -864,6 +864,9 @@ a:hover {
   background-size: 12%;
 }
 
+.roadmap {
+  margin-bottom: 150px;
+}
 .roadmap .roadmap-container {
   position: relative;
   width: 100%;
@@ -907,6 +910,8 @@ a:hover {
 }
 .roadmap .roadmap__logo {
   position: relative;
+  width: 100%;
+  height: 100%;
   max-width: 300px;
   z-index: 1;
 }
@@ -915,6 +920,52 @@ a:hover {
   font-size: 2em;
   top: 75%;
   z-index: 2;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.contacts-container .contacts__element {
+  position: absolute;
+  z-index: -1;
+  right: 60%;
+  top: -70px;
+}
+.contacts-container .contacts__element-cube-m {
+  position: absolute;
+  bottom: 73%;
+  right: 65%;
+  z-index: -1;
+}
+.contacts-container .contacts__element-cube-s {
+  position: absolute;
+  bottom: 15%;
+  right: 47%;
+}
+.contacts-container .contacts__item {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../img/contacts/banner.png");
+  background-repeat: no-repeat;
+  padding: 30px 0 30px 88px;
+  min-width: 1082px;
+  min-height: 329px;
+  margin-bottom: 160px;
+}
+.contacts-container .contacts__title {
+  text-align: start;
+}
+.contacts-container .contacts__description {
+  max-width: 250px;
+  margin-bottom: 49px;
+}
+.contacts-container .contacts__icon {
+  margin-right: 20px;
+}
+.contacts-container .contacts__icons {
+  margin-bottom: 20px;
 }
 
 .application-container {
