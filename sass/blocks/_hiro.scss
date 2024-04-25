@@ -21,7 +21,7 @@
   background-position: 50% 50%;
   background-size: contain;
   // background-position: 50% 60%;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 // .hero__bg {
@@ -42,6 +42,21 @@
   align-items: center;
   text-transform: uppercase;
   margin-bottom: 32px;
+}
+
+.hiro-top__item {
+  display: flex;
+}
+
+.title-descr {
+  max-width: 930px;
+  text-align: center;
+  // margin-bottom: 50px;
+}
+
+.descr-text {
+  display: inline-block;
+  margin-bottom: 0.2em;
 }
 
 .hiro__hiro-title {
@@ -84,6 +99,10 @@
 
 .hiro__hiro-button:nth-child(3) {
   margin-right: 50px;
+}
+
+.hiro__hiro-button:last-child {
+  // background-color: red;
 }
 
 // .header-hiro {
@@ -150,4 +169,78 @@
   z-index: -1;
   opacity: 0.5;
   overflow-y: hidden;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+  .hiro-container {
+
+    .hiro__hiro-top {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .hiro-top__item {
+      max-width: 320px;
+      // min-width: 500px;
+      position: relative;
+    }
+
+    .hiro__hiro-title {
+      max-width: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hiro-top__item>.hiro__hiro-icon:first-child {
+      position: absolute;
+      // left: 0px;
+      left: -30px;
+      top: 1px;
+    }
+
+    .title-descr {
+      position: relative;
+      max-width: 301px;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
+    .descr-text {
+      margin: 0;
+    }
+
+    .title-descr>span:last-child {
+      display: inline-block;
+    }
+
+    .hiro__hiro-icon {
+      margin: 0;
+    }
+
+    .hiro__hiro-icon:last-child {
+      position: absolute;
+      left: -5px;
+      bottom: -1px;
+    }
+
+
+    .hiro__logo {
+      margin-right: -28px;
+    }
+
+    .hiro__hiro-icon {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+
+    .hiro__subtitle {
+      font-size: 1em;
+    }
+  }
 }

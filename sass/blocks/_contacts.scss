@@ -8,20 +8,20 @@
     z-index: -1;
     // left: 0;
     right: 60%;
-    top: -70px;
+    bottom: -25%;
   }
 
-   .contacts__element-cube-m {
-     position: absolute;
+  .contacts__element-cube-m {
+    position: absolute;
     bottom: 73%;
     right: 65%;
     z-index: -1;
-   }
+  }
 
   .contacts__element-cube-s {
     position: absolute;
-      bottom: 15%;
-      right: 47%;
+    bottom: 15%;
+    right: 47%;
   }
 
   .contacts__item {
@@ -40,8 +40,9 @@
   }
 
   .contacts__description {
-    max-width: 250px;
+    max-width: 317px;
     margin-bottom: 49px;
+    font-size: 1.25em;
   }
 
   .contacts__icon {

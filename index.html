@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BNS - BlockChain Neural System</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
@@ -12,41 +12,50 @@
 <body>
   <header class="header">
     <div class="header__navigation">
-      <div class="wrapper header__top">
-        <div class="header__top-logo">
-          <a class="header__logo" href="#!">
+      <div class="wrapper header__wrap">
+        <div class="logo">
+          <a class="logo__image-link" href="#">
             <img src="./img/header/logo.svg" alt="logo">
           </a>
-          <div class="header__title">
-            <p class="header__logo-title">BNS</p>
-            <p class="header__top-descr">BlockChain Neural System</p>
+          <div class="logo-text">
+            <p class="logo-title">BNS</p>
+            <p class="logo-descr">BlockChain Neural System</p>
           </div>
         </div>
-        <div class="header__nav">
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__link"><a href="#!">Main</a></li>
-              <li class="nav__link"><a href="#!">About Us</a></li>
-              <li class="nav__link"><a href="#!">Advantages</a></li>
-              <li class="nav__link"><a href="#!">BNS is interesting for</a></li>
-              <li class="nav__link"><a href="#!">Area of application</a></li>
-              <li class="nav__link"><a href="#!">Roadmap</a></li>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#main" class="menu__link">Main</a></li>
+              <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+              <li class="menu__item"><a href="#advantages" class="menu__link">Advantages</a></li>
+              <li class="menu__item"><a href="#interesting" class="menu__link">BNS is interesting for</a></li>
+              <li class="menu__item"><a href="#application" class="menu__link">Area of application</a></li>
+              <li class="menu__item"><a href="#roadmap" class="menu__link">Roadmap</a></li>
             </ul>
           </nav>
+          <!-- <div class="header-button buttons btn-mobile">
+            <a href="#contacts">
+              <img class="nav-button" src="./img/header/nav-btn.svg">
+            </a>
+          </div> -->
         </div>
-        <div class="header__top-button buttons">
-          <a class="header-button" href="#!">
-            <img src="./img/header/nav-btn.png">
+        <div class="header-button buttons">
+          <a href="#contacts">
+            <img class="nav-button" src="./img/header/nav-btn.svg">
           </a>
         </div>
       </div>
     </div>
     </div>
   </header>
-
   <main>
     <section class="hiro">
-      <div class="container hiro-container">
+      <div class="container hiro-container" id="main">
         <img class="hiro__ellipse-left" src="./img/header/ellipse-left.png" alt="ellipse">
         <img class="hiro__ellipse-right" src="./img/header/ellipse-right.png" alt="ellipse">
         <img class="hiro__ellipse-center" src="./img/header/ellipse-center.png" alt="ellipse">
@@ -57,15 +66,27 @@
         </div> -->
 
         <div class="hiro__hiro-top">
-          <h1 class="hiro__hiro-title"><img class="hiro__hiro-icon" src="./img/header/hrader-logo.svg"
-              alt="hiro-logo">BlockChain Neural
-            System (BNS)</h1>
-          <p class="title-text"><span class="text-opacity">is a global artificial intelligence
-              ecosystem</span></p>
-          <p class="title-text"><span class="text-opacity">built on the </span> <span
-              class="hiro__highlighted-text"><img class="hiro__hiro-icon" src="./img/header/solana.svg"
-                alt="solana">Solana
-              blockchain</span></p>
+          <div class="hiro-top__item">
+            <img class="hiro__hiro-icon" src="./img/header/hrader-logo.svg" alt="hiro-logo">
+            <h1 class="hiro__hiro-title">BlockChain Neural
+              System (BNS)</h1>
+          </div>
+          <p class="title-text title-descr">
+            <span class="text-opacity descr-text">
+              is a global artificial intelligence
+              ecosystem
+            </span>
+            <span class="text-opacity"> 
+              built on the 
+            </span>
+            <span class="hiro__highlighted-text">
+              <img class="hiro__hiro-icon" src="./img/header/solana.svg"
+                alt="solana">
+                Solana
+              blockchain
+            </span>
+          </p>
+          <!-- <p class="title-text"></p> -->
         </div>
         <div>
           <p class="hiro__subtitle"><span class="text-opacity">Affordable </span><span
@@ -74,10 +95,10 @@
         </div>
         <div class="hiro__hiro-buttons">
 
-          <a class="hiro__hiro-button button" href="#!">
-            <button>
-              <img src="./img/header/btn_join us.png">
-            </button>
+          <a class="hiro__hiro-button button" href="#contacts">
+          <button>
+              <img src="./img/header/btn_join-us.svg">
+          </button>
           </a>
           <a class="hiro__hiro-button" href="#!">
             <button>
@@ -95,12 +116,12 @@
     </section>
 
     <div class="container">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-container">
           <h2 class="title">
             <p class="title-text">about <span class="text-opacity">us</span></p>
           </h2>
-
+          <img class="about-element" src="./img/about/about-element.png">
           <div class="about__items">
             <div class="about__item">
               <div class="about__item-header">
@@ -150,7 +171,7 @@
       </section>
     </div>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <h2 class="title">
           <p><span class="text-opacity">Our </span><span class="title-text">advantages</span></p>
@@ -197,7 +218,7 @@
     </section>
     </div>
 
-    <section class="ecosystem">
+    <section class="ecosystem" id="interesting">
       <div class="container ecosystem-container">
         <div class="ecosystem__text">
           <div>
@@ -317,14 +338,14 @@
         <div class="features__button button">
           <button>
             <a href="#!">
-              <img src="./img/header/btn_join us.png">
+              <img src="./img/header/btn_join-us.svg">
             </a>
           </button>
         </div>
       </div>
     </section>
 
-    <section class="application">
+    <section class="application" id="application">
       <div class="container application-container">
         <h2 class="title title-text application__title">
           <span class="text-opacity">Area of </span>&nbsp; application
@@ -636,7 +657,7 @@
       </div>
     </section>
 
-    <section class="roadmap">
+    <section class="roadmap" id="roadmap">
       <div class="wrapper roadmap-container">
         <img class="roadmap__bg" src="./img/roadmap/roadmap-bg.png" alt="roadmap-bg">
         <img class="roadmap__element" src="./img/roadmap/roadmap-element.png" alt="roadmap-element">
@@ -664,19 +685,46 @@
             <h2 class="title title-text contacts__title">
               Join&nbsp;<span class="text-opacity">Us</span>
             </h2>
-            <p class="contacts__description">We revolutionize the AI market with the blockchain technology</p>
+            <p class="contacts__description"><span class="text-opacity">We revolutionize the AI market with the
+                blockchain technology</span></p>
           </div>
           <div class="contacts__icons">
-            <img class="contacts__icon" src="./img/contacts/telegram.svg" alt="telegram">
-            <img class="contacts__icon" src="./img/contacts/x.svg" alt="x">
-            <img class="contacts__icon" src="./img/contacts/youtube.svg" alt="youtube">
-            <img class="contacts__icon" src="./img/contacts/fb.svg" alt="telegram">
+            <a href="#">
+              <img class="contacts__icon" src="./img/contacts/telegram.svg" alt="telegram">
+            </a>
+            <a href="#">
+              <img class="contacts__icon" src="./img/contacts/x.svg" alt="x">
+            </a>
+            <a href="#">
+              <img class="contacts__icon" src="./img/contacts/youtube.svg" alt="youtube">
+            </a>
+            <a href="#">
+              <img class="contacts__icon" src="./img/contacts/fb.svg" alt="telegram">
+            </a>
           </div>
           <p class=""><a href="mailto:support@bnsys.io">support@bnsys.io</a></p>
         </div>
       </div>
     </section>
   </main>
+  <footer class="footer" id="contacts">
+    <div class="container footer-container">
+      <div class="footer__logo">
+        <div class="logo-image">
+          <a class="logo-image__link" href="#">
+            <img src="./img/header/logo.svg" alt="logo">
+          </a>
+          <div class="logo-text">
+            <p class="logo-title">BNS</p>
+            <p class="logo-descr text-opacity">BlockChain Neural System</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__text">
+        2017-2024 © BlockChain Neural System (BNS), All rights reserved
+      </div>
+    </div>
+  </footer>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/swiper-init.js"></script>
   <script src="./js/script.js"></script>
