@@ -93,36 +93,137 @@
   align-items: center;
 }
 
+.button__join {
+  position: relative;
+  z-index: 0;
+}
+
+
+
+.hiro__hiro-button:nth-child(1) {
+  margin-top: -3px;
+}
+
 .hiro__hiro-button:nth-child(2) {
   margin-left: -40px;
 }
 
 .hiro__hiro-button:nth-child(3) {
   margin-right: 50px;
+  // background-color: red;
 }
+
+.hiro__hiro-button:nth-child(3):hover {
+  // background-color: red;
+}
+
+// .button-video {
+//   // display: inline-block;
+//   width: 270px;
+//   height: 64px;
+//   position: relative;
+//   // clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
+// }
+
+// .video-wrapper {
+//   filter: drop-shadow(0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC);
+// }
+
+// .video-wrapper-video:hover {
+//   filter: drop-shadow(0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC);
+// }
+
+
+// .button-video::after {
+//   position: absolute;
+//   content: '';
+//   clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
+//   background-image: url('../../img/header/btn_videopresentation.svg');
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   // box-shadow: 0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC;
+//   /* Обеспечьте, чтобы изображение занимало всю ширину родительского элемента */
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   /* Обеспечьте, чтобы изображение занимало всю высоту родительского элемента */
+//   /* Обрезать изображение по мере необходимости */
+// }
+
+.video-wrapper {
+}
+
+.video-wrapper:hover {
+  filter: drop-shadow(0px 0px 30px #1A3BCC);
+}
+
+.button-video {
+  width: 270px;
+  height: 64px;
+  clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
+  background-image: url('../../img/header/btn_videopresentation.svg');
+  background-repeat: no-repeat;
+}
+
+
+
+
+// .tag-wrap {
+
+// }
+
+// .tag-wrap:hover {
+//   filter: drop-shadow(-1px 50px 3px rgba(50, 50, 0, 0.5));
+// }
+// .tag {
+//   background: #FB8C00;
+//   color: #222;
+//   padding: 2rem 3rem 2rem 4rem;
+//   font: bold 32px system-ui;
+//   clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
+// }
+
+
+// .hiro__button-finish::after {
+//   width: 100%;
+//   position: absolute;
+//   content: '432432';
+//   background-image: url('..//../img/header/btn_videopresentation.svg');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   top: 20px;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 1;
+
+// }
+
+
+.hiro__button-finish:hover {
+
+  // background-color: red;
+  /* Новый цвет фона при наведении */
+  // box-shadow: 0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC;
+  /* Добавляем свечение при наведении */
+  /* Добавляем свечение при наведении */
+}
+
+
 
 .hiro__hiro-button:last-child {
   // background-color: red;
 }
 
-// .header-hiro {
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   z-index: 3;
-// }
+.hiro__hiro-button {
+  padding: 0;
+  margin: 0;
+}
 
 .hiro-container {
   position: relative;
   width: 100%;
-
 }
 
-// .hero__bg {
-//   position: absolute;
-//   width: 100%;
-//   top: 0;
-//   bottom: 500px;
-// }
 
 .hiro__bg-elements {
   position: absolute;
@@ -169,6 +270,12 @@
   z-index: -1;
   opacity: 0.5;
   overflow-y: hidden;
+}
+
+
+
+.hiro__btn-presentation-mobile {
+  display: none;
 }
 
 
@@ -241,6 +348,39 @@
 
     .hiro__subtitle {
       font-size: 1em;
+    }
+
+    .hiro__hiro-buttons {
+      flex-direction: column;
+    }
+
+    .hiro__hiro-button:nth-child(1) {
+      // background-color: rgb(48, 22, 117);
+      margin-bottom: -40px;
+    }
+
+    .hiro__hiro-button:nth-child(2) {
+      // background-color: rgb(20, 121, 62);
+      margin-left: 0px;
+    }
+
+    .hiro__hiro-button:nth-child(3) {
+      margin-left: -10px;
+    }
+
+    // .hiro__hiro-button:nth-child(3) img {
+    //   margin-left: -10px;
+    //   background-color: saddlebrown;
+    //   height: 165px;
+    //   width: 168px;
+    // }
+
+    .hiro__btn-presentation {
+      display: none;
+    }
+
+    .hiro__btn-presentation-mobile {
+      display: block;
     }
   }
 }
