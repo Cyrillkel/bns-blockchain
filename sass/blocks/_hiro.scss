@@ -1,47 +1,26 @@
 .hiro {
   display: flex;
   flex-direction: column;
-  //   width: 100%;
-  // max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  // position: relative;
-  // align-items: center;
   min-height: 900px;
-
-  // height: 100vh;
-
-  // min-height: calc(100vh - 5px);
-
   background: url('../../img/header/header-bg.png');
   background-repeat: no-repeat;
-
-  // background-position: 50%;
-
-  background-position: 50% 50%;
+  background-position: 50% 0%;
   background-size: contain;
-  // background-position: 50% 60%;
   padding-top: 40px;
 }
 
-// .hero__bg {
-//   position: absolute;
-//   width: 100%;
-// }
 
-// .hero__bg {
-//   margin-top: -500px;
-// }
 
 .hiro__hiro-top {
   font-size: 2.25em;
   font-family: "Gilroy";
-  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .hiro-top__item {
@@ -51,7 +30,6 @@
 .title-descr {
   max-width: 930px;
   text-align: center;
-  // margin-bottom: 50px;
 }
 
 .descr-text {
@@ -76,6 +54,7 @@
   font-size: 1.5em;
   text-align: center;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 
 .text-opacity {
@@ -91,143 +70,68 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
-.button__join {
-  position: relative;
-  z-index: 0;
+// button
+
+.wrapper-btn {}
+
+.wrapper-btn:hover {
+  filter: drop-shadow(0px 0px 20px #1A3BCC);
 }
 
-
-
-.hiro__hiro-button:nth-child(1) {
-  margin-top: -3px;
+.button-join {
+  min-width: 192px;
+  min-height: 64px;
+  background-image: url('../../img/header/btn-join.svg');
+  clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hiro__hiro-button:nth-child(2) {
-  margin-left: -40px;
-}
-
-.hiro__hiro-button:nth-child(3) {
-  margin-right: 50px;
-  // background-color: red;
-}
-
-.hiro__hiro-button:nth-child(3):hover {
-  // background-color: red;
-}
-
-// .button-video {
-//   // display: inline-block;
-//   width: 270px;
-//   height: 64px;
-//   position: relative;
-//   // clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
-// }
-
-// .video-wrapper {
-//   filter: drop-shadow(0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC);
-// }
-
-// .video-wrapper-video:hover {
-//   filter: drop-shadow(0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC);
-// }
-
-
-// .button-video::after {
-//   position: absolute;
-//   content: '';
-//   clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
-//   background-image: url('../../img/header/btn_videopresentation.svg');
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   // box-shadow: 0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC;
-//   /* Обеспечьте, чтобы изображение занимало всю ширину родительского элемента */
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   /* Обеспечьте, чтобы изображение занимало всю высоту родительского элемента */
-//   /* Обрезать изображение по мере необходимости */
-// }
-
-.video-wrapper {
-}
-
-.video-wrapper:hover {
-  filter: drop-shadow(0px 0px 30px #1A3BCC);
+.button-whitepaper {
+  min-width: 192px;
+  min-height: 64px;
+  clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
+  background-image: url('../../img/header/btn-whitepaper.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .button-video {
-  width: 270px;
-  height: 64px;
+  min-width: 270px;
+  min-height: 64px;
   clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
-  background-image: url('../../img/header/btn_videopresentation.svg');
+  background-image: url('../../img/header/btn-video.svg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-
-
-// .tag-wrap {
-
-// }
-
-// .tag-wrap:hover {
-//   filter: drop-shadow(-1px 50px 3px rgba(50, 50, 0, 0.5));
-// }
-// .tag {
-//   background: #FB8C00;
-//   color: #222;
-//   padding: 2rem 3rem 2rem 4rem;
-//   font: bold 32px system-ui;
-//   clip-path: polygon(30px 0%, 100% 0%, 100% 100%, 30px 100%, 0 50%);
-// }
-
-
-// .hiro__button-finish::after {
-//   width: 100%;
-//   position: absolute;
-//   content: '432432';
-//   background-image: url('..//../img/header/btn_videopresentation.svg');
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   top: 20px;
-//   bottom: 0;
-//   left: 0;
-//   z-index: 1;
-
-// }
-
-
-.hiro__button-finish:hover {
-
-  // background-color: red;
-  /* Новый цвет фона при наведении */
-  // box-shadow: 0 0 10px 2px #1A3BCC, 0 0 20px 20px #1A3BCC;
-  /* Добавляем свечение при наведении */
-  /* Добавляем свечение при наведении */
+.button-video__icon {
+  margin-left: 8px;
 }
 
-
-
-.hiro__hiro-button:last-child {
-  // background-color: red;
+.btn-title {
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-transform: uppercase;
 }
 
-.hiro__hiro-button {
-  padding: 0;
-  margin: 0;
-}
+// .hiro__hiro-button {
+//   padding: 0;
+//   margin: 0;
+// }
 
 .hiro-container {
   position: relative;
   width: 100%;
 }
 
-
 .hiro__bg-elements {
   position: absolute;
-  bottom: -265px;
+  top: 50%;
   left: 45px;
   z-index: -1;
 }
@@ -272,115 +176,121 @@
   overflow-y: hidden;
 }
 
-
-
 .hiro__btn-presentation-mobile {
   display: none;
 }
 
-
-
-
 @media (max-width: 1000px) {
+  .hiro {
+    background-image: url('../../img/header/mobile-bg.png');
+    background-size: contain;
+    background-position: 40% 100px;
 
-  .hiro-container {
+    .hiro-container {
 
-    .hiro__hiro-top {
-      font-size: 1.5em;
-      text-align: center;
-    }
+      .hiro__hiro-top {
+        font-size: 1.5em;
+        text-align: center;
+      }
 
-    .hiro-top__item {
-      max-width: 320px;
-      // min-width: 500px;
-      position: relative;
-    }
+      .hiro-top__item {
+        max-width: 320px;
+        position: relative;
+      }
 
-    .hiro__hiro-title {
-      max-width: 240px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+      .hiro__hiro-title {
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-    .hiro-top__item>.hiro__hiro-icon:first-child {
-      position: absolute;
-      // left: 0px;
-      left: -30px;
-      top: 1px;
-    }
+      .hiro-top__item>.hiro__hiro-icon:first-child {
+        position: absolute;
+        left: -30px;
+        top: 1px;
+      }
 
-    .title-descr {
-      position: relative;
-      max-width: 301px;
-      text-align: center;
-      line-height: 1.5em;
-    }
+      .title-descr {
+        position: relative;
+        max-width: 301px;
+        text-align: center;
+        line-height: 1.5em;
+      }
 
-    .descr-text {
-      margin: 0;
-    }
+      .descr-text {
+        margin: 0;
+      }
 
-    .title-descr>span:last-child {
-      display: inline-block;
-    }
+      .title-descr>span:last-child {
+        display: inline-block;
+      }
 
-    .hiro__hiro-icon {
-      margin: 0;
-    }
+      .hiro__hiro-icon {
+        margin: 0;
+      }
 
-    .hiro__hiro-icon:last-child {
-      position: absolute;
-      left: -5px;
-      bottom: -1px;
-    }
+      .hiro__hiro-icon:last-child {
+        position: absolute;
+        left: -5px;
+        bottom: -1px;
+      }
 
 
-    .hiro__logo {
-      margin-right: -28px;
-    }
+      .hiro__logo {
+        margin-right: -28px;
+      }
 
-    .hiro__hiro-icon {
-      display: inline-block;
-      width: 32px;
-      height: 32px;
-    }
+      .hiro__hiro-icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+      }
 
-    .hiro__subtitle {
-      font-size: 1em;
-    }
+      .hiro__subtitle {
+        font-size: 1em;
+      }
 
-    .hiro__hiro-buttons {
-      flex-direction: column;
-    }
+      .hiro__hiro-buttons {
+        flex-direction: column;
+        gap: 0;
+      }
 
-    .hiro__hiro-button:nth-child(1) {
-      // background-color: rgb(48, 22, 117);
-      margin-bottom: -40px;
-    }
+      .hiro__hiro-button {
+        margin-bottom: 24px;
+      }
 
-    .hiro__hiro-button:nth-child(2) {
-      // background-color: rgb(20, 121, 62);
-      margin-left: 0px;
-    }
+      .button-video__icon {
+        display: none;
+      }
 
-    .hiro__hiro-button:nth-child(3) {
-      margin-left: -10px;
-    }
+      .btn-title {
+        font-size: 1em;
+      }
 
-    // .hiro__hiro-button:nth-child(3) img {
-    //   margin-left: -10px;
-    //   background-color: saddlebrown;
-    //   height: 165px;
-    //   width: 168px;
-    // }
+      .button-video {
+        min-width: 192px;
+      }
 
-    .hiro__btn-presentation {
-      display: none;
-    }
+      .hiro__bg-elements {
+        display: none;
+      }
 
-    .hiro__btn-presentation-mobile {
-      display: block;
+      .hiro__ellipse-left {
+        display: none;
+      }
+
+      .hiro__ellipse-center {
+        display: none;
+      }
+
+      .hiro__ellipse-right {
+        display: none;
+      }
+
+      .hiro__ellipse-right-second {
+        display: none;
+      }
     }
   }
 }
