@@ -73,6 +73,10 @@
   gap: 24px;
 }
 
+.element-mobile {
+  display: none;
+}
+
 // button
 
 .wrapper-btn {}
@@ -91,13 +95,63 @@
 }
 
 .button-whitepaper {
+  position: relative;
   min-width: 192px;
   min-height: 64px;
   clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
   background-image: url('../../img/header/btn-whitepaper.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
 }
+
+// .button-whitepaper>.btn-title {
+//   filter: drop-shadow(0px 0px 150px #1A3BCC) brightness(150%);
+//   position: relative;
+// }
+
+.hiro__hiro-buttons {
+  position: relative;
+}
+
+.button-whitepaper__bg {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  z-index: -2;
+
+  filter: blur(10px);
+  /* Добавляем размытие */
+  filter: drop-shadow(0px 0px 5px #2448ff) brightness(150%);
+  opacity: 0.8;
+}
+
+.button-whitepaper:hover {
+  filter: drop-shadow(0px 0px 150px #1A3BCC);
+}
+
+// .button-whitepaper::after {
+//   position: absolute;
+//   content: '';
+//   left: 0;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   filter: drop-shadow(0px 0px 50px #1A3BCC);
+//   /* добавляем свечение */
+//   // background-color: #1A3BCC;
+//   // border-radius: 100%;
+//   // filter: blur(20px);
+//   backdrop-filter: blur(30px);
+//   /* применяем размытие к заднему плану */
+//   background-color: rgba(26, 59, 204, 0.5);
+//   /* добавляем прозрачный фон */
+//   border-radius: 10px;
+// }
+
 
 .button-video {
   min-width: 270px;
@@ -107,6 +161,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .button-video__icon {
   margin-left: 8px;
@@ -180,13 +235,47 @@
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .hiro {
     background-image: url('../../img/header/mobile-bg.png');
     background-size: contain;
-    background-position: 40% 100px;
+    background-position: 50% 100px;
 
     .hiro-container {
+
+      .element-mobile {
+        display: block;
+      }
+
+      .hiro__el-m-left {
+        position: absolute;
+        bottom: -110px;
+        left: 10px;
+        z-index: 1;
+      }
+
+      .hiro__el-m-right {
+        position: absolute;
+        bottom: -60px;
+        right: 1px;
+      }
+
+      .hiro__elemets-square-m {
+        position: absolute;
+        bottom: -80px;
+        left: 40px;
+
+      }
+
+      .hiro__ellipse-m {
+        position: absolute;
+        bottom: -90px;
+        right: 80px;
+        z-index: -1;
+      }
+
+      .hiro__elemets-mobile {}
+
 
       .hiro__hiro-top {
         font-size: 1.5em;

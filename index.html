@@ -69,8 +69,12 @@
         <img class="hiro__ellipse-right" src="./img/header/ellipse-right.png" alt="ellipse">
         <img class="hiro__ellipse-center" src="./img/header/ellipse-center.png" alt="ellipse">
         <img class="hiro__ellipse-right-second" src="./img/header/ellipse-right-second.png" alt="ellipse">
-        <img class="hiro__bg-elements" src="./img/header/elements-bg.png" alt="elements">
- 
+        <img class="hiro__bg-elements element-mobile" src="./img/header/elements-bg.png" alt="elements">
+        <img class="hiro__el-m-right element-mobile" src="./img/header/elements-right-mobile.png">
+        <img class="hiro__el-m-left element-mobile" src="./img/header/elements-left-mobile.png">
+        <img class="hiro__ellipse-m element-mobile" src="./img/header/element-ellipses-mobile.png">
+        <img class="hiro__elemets-square-m element-mobile" src="./img/header/element-square-mobile.png">
+
         <div class="hiro__hiro-top">
           <div class="hiro-top__item">
             <img class="hiro__hiro-icon" src="./img/header/hrader-logo.svg" alt="hiro-logo">
@@ -109,7 +113,8 @@
           <a class="hiro__hiro-button" href="#!">
             <span class="wrapper-btn">
               <button class="button-whitepaper">
-                <span class="btn-title">whitepaper</span>
+                <span class="btn-title ">whitepaper</span>
+                <img class="button-whitepaper__bg" src="./img/header/whitepapper-element.png">
               </button>
             </span>
           </a>
@@ -178,6 +183,7 @@
               </div>
             </div>
           </div>
+          <img class="about__image" src="./img/about/bg-mobile.png">
         </div>
       </section>
     </div>
@@ -188,8 +194,8 @@
           <p><span class="text-opacity">Our </span><span class="title-text">advantages</span></p>
         </h2>
         <div class="advantages__content">
-          <div class="advantages__content-elem advantages__content-elem_one">
-            <h3>
+          <div class="advantages__content-elem advantages__content-elem_one elem-one">
+            <h3 class="elem-one__text">
               <p class="text-opacity">BNS provides huge computing capacity</p>
               <p>for storing and training neural networks</p>
             </h3>
@@ -201,17 +207,20 @@
               times lower than from similar cloud computing services</p>
           </div>
           <div class="advantages__content-elem advantages__content-elem_three">
-            <img class="advantages__pic-data " src="./img/advantages/data.svg" alt="data">
+            <img class="advantages__pic-data" src="./img/advantages/data.svg" alt="data">
             <p class="data-text content-text">You can store and process Big Data</p>
           </div>
           <div class="advantages__content-elem advantages__content-elem_four">
-            <img class="advantages__pic-power" src="./img/advantages/power.png" alt="power">
+            <img class="advantages__pic-power desktop" src="./img/advantages/power.png" alt="power">
+            <img class="advantages__pic-power mobile" src="./img/advantages/image-m-1.png" alt="power">
+
             <p class="content-text">Available computing power exceeds<span class="text-opacity"> that of all
                 supercomputers in the world</span> by 30
               times.</p>
           </div>
           <div class="advantages__content-elem advantages__content-elem_five">
-            <p class="content-text"><span class="text-opacity">If you are a professional in the AI field, you can
+            <p class="content-text advantages__content-text"><span class="text-opacity">If you are a professional in the
+                AI field, you can
               </span>receive the certificate of
               specialist from BNS,<span class="text-opacity"> and
                 offer
@@ -232,7 +241,7 @@
     <section class="ecosystem" id="interesting">
       <div class="container ecosystem-container">
         <div class="ecosystem__text">
-          <div>
+          <div class="ecosystem__text__item">
             <h3 class="title ecosystem__title">
               BNS ecosystem
             </h3>
@@ -263,7 +272,11 @@
 
     <section class="decetralisation">
       <div class="decetralisation__bg">
-        <img class="decetralisation__bg" src="./img/decentralization/decentralisation-bg.png" alt="decetralisation-bg">
+        <img class="decetralisation__bg desktop" src="./img/decentralization/decentralisation-bg.png"
+          alt="decetralisation-bg">
+        <img class="decetralisation__bg mobile" src="./img/decentralization/decentralisation-bg-mobile.png"
+          alt="decetralisation-bg">
+
       </div>
       <div class="container decetralisation-container">
         <h2 class="title title-text title-decetral">
@@ -287,7 +300,9 @@
     <section class="features">
       <div class="wrapper features-container">
         <div class="features__features-bg">
-          <img src="./img/features/features-bg.png" alt="features-bg">
+          <img class="desktop" src="./img/features/features-bg.png" alt="features-bg">
+          <img class="mobile features__bg-top" src="./img/features/features-bg-top.png" alt="features-bg">
+          <img class="mobile features__bg-bottom" src="./img/features/features-bg-m.png" alt="features-bg">
         </div>
         <h2 class="title title-text">
           <span class="text-opacity">Bns</span> is interesting for
@@ -346,12 +361,14 @@
             </p>
           </div>
         </div>
-        <div class="features__button button">
-          <button>
-            <a href="#!">
-              <img src="./img/header/btn_join-us.svg">
-            </a>
-          </button>
+        <div class="features__button">
+          <a class="hiro__hiro-button" href="#contacts">
+            <span class="wrapper-btn">
+              <button class="button-join">
+                <span class="btn-title">join us</span>
+              </button>
+            </span>
+          </a>
         </div>
       </div>
     </section>

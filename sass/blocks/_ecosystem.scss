@@ -25,3 +25,34 @@
    grid-template-rows: 1fr 1fr;
    grid-gap: 40px;
  }
+
+
+ @media screen and (max-width: 768px) {
+   .ecosystem {
+     background-image: url('../../img/ecosystem/bg-mobile.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: bottom;
+     ;
+
+     .ecosystem-container {
+       grid-template-columns: none;
+       text-align: center;
+
+       .ecosystem__title {
+         text-align: center;
+         margin-bottom: 24px;
+       }
+
+       .ecosystem__image {
+         display: none;
+       }
+
+       .ecosystem__text__item {
+         margin-bottom: 48px;
+       }
+     }
+
+
+   }
+ }

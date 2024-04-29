@@ -57,3 +57,30 @@
   display: flex;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .features-container {
+    padding: 0 23px;
+
+    .features__items {
+      grid-template-columns: 1fr;
+    }
+
+    .feautures-cuount {
+      font-size: 1.5em;
+    }
+
+    .features-container {
+      padding: 100px 160px;
+      position: relative;
+    }
+
+    .features__bg-top {
+      position: absolute;
+      top: 0;
+      left: 30%;
+      // rotate: 90deg;
+    }
+
+  }
+}

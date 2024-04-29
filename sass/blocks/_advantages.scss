@@ -133,5 +133,151 @@
   left: 0;
   background-color: rgba(255, 255, 255, 0.06);
   z-index: -1;
-  ;
+}
+
+@media (max-width: 740px) {
+  .advantages {
+    min-height: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .advantages__content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 24px;
+    // max-height: 521px;
+  }
+
+  .advantages__content-elem_one {
+    padding: 12px;
+    position: relative;
+    min-width: 100%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .elem-one__text {
+    min-width: 303px;
+  }
+
+  .advantages__content-elem_one::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+  }
+
+  //второй становится третим
+  .advantages__content-elem_two {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 3/4;
+    min-height: 338px;
+  }
+
+
+  //третий становится четвертым
+  .advantages__content-elem_three {
+    position: relative;
+    grid-column: 1/1;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    gap: 24px;
+    padding: 24px 0;
+
+    .data-text {
+      max-width: 185px;
+    }
+  }
+
+  .advantages__content-elem_three::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+  }
+
+  // четвертый становится вторым
+  .advantages__content-elem_four {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 24px;
+    gap: 24px;
+
+    .advantages__pic-power {
+      width: 100%;
+    }
+  }
+
+
+
+  .advantages__content-elem_four::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+    ;
+  }
+
+  // пятый становится шестым
+  .advantages__content-elem_five {
+    grid-column: 1/1;
+    grid-row: 6/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    padding: 24px 24px;
+    min-height: 464px;
+    margin-bottom: 48px;
+
+    .advantages__content-text {
+      min-height: 244px;
+    }
+  }
+
+  .advantages__content-elem_five::before {
+    background-image: url('../../img/advantages/certifi-mob.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  //шестой становится пятым
+  .advantages__content-elem_six {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 5/6;
+    background-image: url('../../img/advantages/computer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    position: cover;
+    text-align: left;
+
+  }
+
 }

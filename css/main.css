@@ -203,6 +203,29 @@ a:hover {
   font-weight: 400;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .content-text {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -316,7 +339,7 @@ a:hover {
     margin: 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .header .header-button {
     display: none;
   }
@@ -391,7 +414,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding-top: 20%;
     font-size: 1em;
     transition: all 0.2s;
     z-index: -1;
@@ -416,7 +438,7 @@ a:hover {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .header__wrap {
     gap: 115px;
   }
@@ -494,6 +516,10 @@ a:hover {
   gap: 24px;
 }
 
+.element-mobile {
+  display: none;
+}
+
 .wrapper-btn:hover {
   filter: drop-shadow(0px 0px 20px #1A3BCC);
 }
@@ -509,6 +535,7 @@ a:hover {
 }
 
 .button-whitepaper {
+  position: relative;
   min-width: 192px;
   min-height: 64px;
   -webkit-clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
@@ -516,6 +543,26 @@ a:hover {
   background-image: url("../../img/header/btn-whitepaper.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 0;
+}
+
+.hiro__hiro-buttons {
+  position: relative;
+}
+
+.button-whitepaper__bg {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  z-index: -2;
+  filter: blur(10px);
+  /* Добавляем размытие */
+  filter: drop-shadow(0px 0px 5px #2448ff) brightness(150%);
+  opacity: 0.8;
+}
+
+.button-whitepaper:hover {
+  filter: drop-shadow(0px 0px 150px #1A3BCC);
 }
 
 .button-video {
@@ -595,11 +642,36 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .hiro {
     background-image: url("../../img/header/mobile-bg.png");
     background-size: contain;
-    background-position: 40% 100px;
+    background-position: 50% 100px;
+  }
+  .hiro .hiro-container .element-mobile {
+    display: block;
+  }
+  .hiro .hiro-container .hiro__el-m-left {
+    position: absolute;
+    bottom: -110px;
+    left: 10px;
+    z-index: 1;
+  }
+  .hiro .hiro-container .hiro__el-m-right {
+    position: absolute;
+    bottom: -60px;
+    right: 1px;
+  }
+  .hiro .hiro-container .hiro__elemets-square-m {
+    position: absolute;
+    bottom: -80px;
+    left: 40px;
+  }
+  .hiro .hiro-container .hiro__ellipse-m {
+    position: absolute;
+    bottom: -90px;
+    right: 80px;
+    z-index: -1;
   }
   .hiro .hiro-container .hiro__hiro-top {
     font-size: 1.5em;
@@ -756,6 +828,24 @@ a:hover {
   line-height: 24px;
 }
 
+.about__image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .about {
+    background-image: none;
+    margin-bottom: 48px;
+  }
+  .about .about__items {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+  .about .about__image {
+    display: block;
+    padding-left: 20px;
+  }
+}
 .advantages {
   min-height: 901px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -883,6 +973,125 @@ a:hover {
   z-index: -1;
 }
 
+@media (max-width: 740px) {
+  .advantages {
+    min-height: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .advantages__content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 24px;
+  }
+  .advantages__content-elem_one {
+    padding: 12px;
+    position: relative;
+    min-width: 100%;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-align: center;
+  }
+  .elem-one__text {
+    min-width: 303px;
+  }
+  .advantages__content-elem_one::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+  }
+  .advantages__content-elem_two {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 3/4;
+    min-height: 338px;
+  }
+  .advantages__content-elem_three {
+    position: relative;
+    grid-column: 1/1;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    gap: 24px;
+    padding: 24px 0;
+  }
+  .advantages__content-elem_three .data-text {
+    max-width: 185px;
+  }
+  .advantages__content-elem_three::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+  }
+  .advantages__content-elem_four {
+    grid-column: 1/1;
+    grid-row: 2/2;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 24px;
+    gap: 24px;
+  }
+  .advantages__content-elem_four .advantages__pic-power {
+    width: 100%;
+  }
+  .advantages__content-elem_four::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    z-index: -1;
+  }
+  .advantages__content-elem_five {
+    grid-column: 1/1;
+    grid-row: 6/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    padding: 24px 24px;
+    min-height: 464px;
+    margin-bottom: 48px;
+  }
+  .advantages__content-elem_five .advantages__content-text {
+    min-height: 244px;
+  }
+  .advantages__content-elem_five::before {
+    background-image: url("../../img/advantages/certifi-mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  .advantages__content-elem_six {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 5/6;
+    background-image: url("../../img/advantages/computer.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    position: cover;
+    text-align: left;
+  }
+}
 .ecosystem {
   background-image: url("../../img/ecosystem/ecosystem-bg.png");
   background-position: center;
@@ -911,6 +1120,28 @@ a:hover {
   grid-gap: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .ecosystem {
+    background-image: url("../../img/ecosystem/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .ecosystem .ecosystem-container {
+    grid-template-columns: none;
+    text-align: center;
+  }
+  .ecosystem .ecosystem-container .ecosystem__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .ecosystem .ecosystem-container .ecosystem__image {
+    display: none;
+  }
+  .ecosystem .ecosystem-container .ecosystem__text__item {
+    margin-bottom: 48px;
+  }
+}
 .decetralisation {
   min-height: 608px;
   position: relative;
@@ -980,6 +1211,22 @@ a:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 768px) {
+  .decetralisation {
+    min-height: 678px;
+  }
+  .decetralisation .decetralisation-container {
+    padding-top: 48px;
+  }
+  .decetralisation .decetralisation-container .descr-decetral,
+  .decetralisation .decetralisation-container .decetralisation__item-text {
+    line-height: 1.5em;
+    max-width: 327px;
+  }
+  .decetralisation .decetralisation-container .decetralisation__item-text {
+    max-width: 207px;
+  }
+}
 .features-container {
   padding: 100px 160px;
   position: relative;
@@ -1039,6 +1286,26 @@ a:hover {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .features-container {
+    padding: 0 23px;
+  }
+  .features-container .features__items {
+    grid-template-columns: 1fr;
+  }
+  .features-container .feautures-cuount {
+    font-size: 1.5em;
+  }
+  .features-container .features-container {
+    padding: 100px 160px;
+    position: relative;
+  }
+  .features-container .features__bg-top {
+    position: absolute;
+    top: 0;
+    left: 30%;
+  }
+}
 .application__title {
   display: flex;
   justify-content: flex-start;
