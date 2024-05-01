@@ -3,7 +3,6 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3, // Показывать сразу три слайда
-  spaceBetween: 20,
   simulateTouch: true,
   grabCursor: true,
   // centeredSlides: true, // Центрирование слайдов
@@ -18,9 +17,7 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-   
   },
-
   // Navigation arrows
   // navigation: {
   //   nextEl: ".swiper-button-next",
@@ -31,8 +28,18 @@ const swiper = new Swiper(".swiper", {
   // scrollbar: {
   //   el: ".swiper-scrollbar",
   // },
-
   keyboard: {
     enabled: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 8,
+    },
+    1024: {},
   },
 });

@@ -9,7 +9,7 @@
 
 .swiper-slide {
 
- max-width: 444px;
+  max-width: 444px;
   max-height: 564px;
   min-width: 444px;
   min-height: 564px;
@@ -80,4 +80,21 @@
   /* Расстояние между кружками */
   border-radius: 50%;
   /* Круглые кружки */
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    max-width: 286px;
+    max-height: 480px;
+    min-width: 286px;
+    min-height: 480px;
+    padding: 8px 8px 24px 8px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
 }

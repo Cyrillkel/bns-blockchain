@@ -157,7 +157,7 @@ a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .desktop {
     display: none;
@@ -181,4 +181,5 @@ a:hover {
     max-width: 768px;
     margin: 0 auto;
   }
+
 }

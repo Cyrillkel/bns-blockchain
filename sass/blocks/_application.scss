@@ -1,37 +1,107 @@
-.application__title {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .application {
   padding: 50px 0;
   margin-bottom: 100px;
 }
 
 .application-card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 24px auto;
+  grid-gap: 24px;
 
-
-  .application-card__image {
-    margin-bottom: 24px;
+  .application-card__img {
+    background-image: url('../../img/application/application-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .application-card__title {
-    margin-bottom: 24px;
+    font-size: 1.5em;
+    font-family: $font-main;
+    font-weight: 600;
   }
 
   .application-card__description ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-family: $font-main;
+    font-weight: 400;
+    color: $white;
+    opacity: 0.5;
+    line-height: 1.3em;
+
+  }
+
+  .application-card__description-items {
+    list-style: none;
+    /* Убираем стандартные маркеры */
+    padding-left: 20px;
+    /* Добавляем отступ слева для места под кружок */
   }
 
   .application-card__description-item {
-    font-family: $font-main;
-    opacity: 0.5;
-    line-height: 1.3em;
+    display: inline-block;
+    /* Делаем элементы списка блочными в строке */
+    vertical-align: top;
+    /* Выравниваем по верхнему краю */
+    position: relative;
+    /* Устанавливаем позицию для псевдоэлемента */
+    padding-left: 20px;
+    /* Отступ для текста */
   }
 
-  ul {
-    color: $white;
+  .application-card__description-item::before {
+    content: '';
+    /* Устанавливаем пустое содержимое */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    top: 50%;
+    /* Располагаем по вертикали по центру */
+    left: 0;
+    /* Располагаем по горизонтали в начале элемента */
+    transform: translateY(-50%);
+    /* Смещаем псевдоэлемент на половину своей высоты вверх */
+    width: 4px;
+    /* Ширина кружка */
+    height: 4px;
+    /* Высота кружка */
+    background-color: $white;
+    /* Цвет кружка */
+    border-radius: 50%;
+    /* Создаем круглый кружок */
+    margin-right: 10px;
+    /* Отступ от текста */
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .application-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 24px auto;
+    grid-gap: 12px;
+
+    .application-card__img {
+      background-image: url('../../img/application/background-m.png');
+    }
+
+    .application-card__title {
+      font-size: 1em;
+    }
+
+    .application-card__description ul {
+      font-size: 0.75em;
+    }
+  }
+
+  .application-container {
+    .application__title {
+      justify-content: center;
+    }
   }
 }

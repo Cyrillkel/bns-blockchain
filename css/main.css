@@ -207,7 +207,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -1068,7 +1068,7 @@ a:hover {
     grid-template-columns: 1fr;
     position: relative;
     padding: 24px 24px;
-    min-height: 464px;
+    min-height: 485px;
     margin-bottom: 48px;
   }
   .advantages__content-elem_five .advantages__content-text {
@@ -1212,6 +1212,10 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .decetralisation__bg {
+    height: 120%;
+    top: -65px;
+  }
   .decetralisation {
     min-height: 678px;
   }
@@ -1289,6 +1293,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .features-container {
     padding: 0 23px;
+    margin-bottom: 48px;
   }
   .features-container .features__items {
     grid-template-columns: 1fr;
@@ -1300,42 +1305,117 @@ a:hover {
     padding: 100px 160px;
     position: relative;
   }
-  .features-container .features__bg-top {
+  .features-container .features__element-top {
     position: absolute;
-    top: 0;
-    left: 30%;
+    min-width: 1000px;
+    background-size: cover;
+    bottom: 440px;
+    left: -50px;
+  }
+  .features-container .features__element-bottom {
+    position: absolute;
+    min-width: 800px;
+    background-size: cover;
+    bottom: 0px;
+    right: -30px;
+  }
+  .features-container .button-join {
+    min-height: 56px;
   }
 }
-.application__title {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .application {
   padding: 50px 0;
   margin-bottom: 100px;
 }
 
-.application-card .application-card__image {
-  margin-bottom: 24px;
+.application-card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px 24px auto;
+  grid-gap: 24px;
+}
+.application-card .application-card__img {
+  background-image: url("../../img/application/application-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .application-card .application-card__title {
-  margin-bottom: 24px;
+  font-size: 1.5em;
+  font-family: "Gilroy";
+  font-weight: 600;
 }
 .application-card .application-card__description ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.application-card .application-card__description-item {
   font-family: "Gilroy";
+  font-weight: 400;
+  color: #FFFFFF;
   opacity: 0.5;
   line-height: 1.3em;
 }
-.application-card ul {
-  color: #FFFFFF;
+.application-card .application-card__description-items {
+  list-style: none;
+  /* Убираем стандартные маркеры */
+  padding-left: 20px;
+  /* Добавляем отступ слева для места под кружок */
+}
+.application-card .application-card__description-item {
+  display: inline-block;
+  /* Делаем элементы списка блочными в строке */
+  vertical-align: top;
+  /* Выравниваем по верхнему краю */
+  position: relative;
+  /* Устанавливаем позицию для псевдоэлемента */
+  padding-left: 20px;
+  /* Отступ для текста */
+}
+.application-card .application-card__description-item::before {
+  content: "";
+  /* Устанавливаем пустое содержимое */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  top: 50%;
+  /* Располагаем по вертикали по центру */
+  left: 0;
+  /* Располагаем по горизонтали в начале элемента */
+  transform: translateY(-50%);
+  /* Смещаем псевдоэлемент на половину своей высоты вверх */
+  width: 4px;
+  /* Ширина кружка */
+  height: 4px;
+  /* Высота кружка */
+  background-color: #FFFFFF;
+  /* Цвет кружка */
+  border-radius: 50%;
+  /* Создаем круглый кружок */
+  margin-right: 10px;
+  /* Отступ от текста */
 }
 
+@media screen and (max-width: 768px) {
+  .application-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px 24px auto;
+    grid-gap: 12px;
+  }
+  .application-card .application-card__img {
+    background-image: url("../../img/application/background-m.png");
+  }
+  .application-card .application-card__title {
+    font-size: 1em;
+  }
+  .application-card .application-card__description ul {
+    font-size: 0.75em;
+  }
+  .application-container .application__title {
+    justify-content: center;
+  }
+}
 .presentation {
   position: relative;
   padding-bottom: 95px;
@@ -1629,4 +1709,20 @@ a:hover {
   /* Расстояние между кружками */
   border-radius: 50%;
   /* Круглые кружки */
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    max-width: 286px;
+    max-height: 480px;
+    min-width: 286px;
+    min-height: 480px;
+    padding: 8px 8px 24px 8px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .swiper-pagination {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
