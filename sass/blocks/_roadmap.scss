@@ -1,5 +1,5 @@
 .roadmap {
-  margin-bottom: 150px;
+  margin-bottom: 200px;
 
   .roadmap-container {
     position: relative;
@@ -10,9 +10,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: contain;
     object-fit: cover;
     z-index: -1;
+    left: -3px;
+    top: 50px;
   }
 
   .roadmap__element-top {
@@ -56,12 +57,69 @@
     z-index: 1;
   }
 
-
   .roadmap-slogan {
     position: absolute;
     font-size: 2em;
     top: 75%;
     z-index: 2;
   }
+}
 
+@media screen and (max-width: 1450px) {
+  .roadmap .roadmap__element {
+    width: 80%;
+    height: 100%;
+  }
+
+  .roadmap .roadmap__element-bottom {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .roadmap .roadmap__element-top {
+    left: 10%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .roadmap {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 150px;
+
+    .roadmap-container {
+      .roadmap .roadmap-container {
+        width: 82%;
+      }
+
+      .roadmap__bg {
+        left: 0;
+      }
+
+      .roadmap__element {
+        top: -30px;
+        right: 30px;
+      }
+
+      .roadmap__element-top {
+        top: 0;
+        left: -20px;
+      }
+
+      .roadmap__logo {
+        width: 50%;
+      }
+
+      .roadmap__content {
+
+        .roadmap-slogan {
+          font-size: 1.5em;
+          top: 90%;
+
+        }
+      }
+    }
+  }
 }

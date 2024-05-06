@@ -1,6 +1,7 @@
 .hiro {
   display: flex;
   flex-direction: column;
+  position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 900px;
@@ -130,28 +131,6 @@
   filter: drop-shadow(0px 0px 150px #1A3BCC);
 }
 
-// .button-whitepaper::after {
-//   position: absolute;
-//   content: '';
-//   left: 0;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: -1;
-//   width: 100%;
-//   height: 100%;
-//   filter: drop-shadow(0px 0px 50px #1A3BCC);
-//   /* добавляем свечение */
-//   // background-color: #1A3BCC;
-//   // border-radius: 100%;
-//   // filter: blur(20px);
-//   backdrop-filter: blur(30px);
-//   /* применяем размытие к заднему плану */
-//   background-color: rgba(26, 59, 204, 0.5);
-//   /* добавляем прозрачный фон */
-//   border-radius: 10px;
-// }
-
 
 .button-video {
   min-width: 270px;
@@ -188,7 +167,9 @@
   position: absolute;
   top: 50%;
   left: 45px;
-  z-index: -1;
+  z-index: -2;
+  // width: 100%;
+  // height: auto;
 }
 
 .hiro__ellipse-left {
@@ -197,7 +178,9 @@
   left: -450px;
   bottom: 0;
   z-index: -1;
-  overflow-y: hidden;
+  // overflow-y: hidden;
+  // width: 100%;
+  // height: auto;
 }
 
 .hiro__ellipse-center {
@@ -207,6 +190,8 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  // width: 100%;
+  // height: auto;
 }
 
 .hiro__ellipse-right {
@@ -215,8 +200,9 @@
   right: -500px;
   bottom: 300px;
   opacity: 0.9;
-  z-index: -1;
-  overflow-y: hidden;
+  z-index: 0;
+  // width: 100%;
+  // height: auto;
 }
 
 .hiro__ellipse-right-second {
@@ -224,22 +210,53 @@
   top: -170px;
   right: -700px;
   bottom: 300px;
+  // width: 100%;
+  // height: auto;
   opacity: 0.9;
   z-index: 0;
-  z-index: -1;
   opacity: 0.5;
-  overflow-y: hidden;
+  // overflow-y: hidden;
+}
+
+.hiro__shape-right {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: -150px;
+  right: -50px;
+  z-index: -2;
+}
+
+.hiro__shape-left {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: -150px;
+  right: 50px;
+  z-index: -2;
 }
 
 .hiro__btn-presentation-mobile {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+  .hiro__shape-right {
+    top: -30px;
+  }
+
+  .hiro__shape-left {
+    top: -80px;
+  }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 576px) {
   .hiro {
-    background-image: url('../../img/header/mobile-bg.png');
-    background-size: contain;
-    background-position: 50% 100px;
+    background-image: url('../../img/header/mobile-bg-1.png');
+    background-size: cover;
+    background-position: 50% 20%;
 
     .hiro-container {
 
@@ -274,8 +291,6 @@
         z-index: -1;
       }
 
-      .hiro__elemets-mobile {}
-
 
       .hiro__hiro-top {
         font-size: 1.5em;
@@ -304,7 +319,7 @@
         position: relative;
         max-width: 301px;
         text-align: center;
-        line-height: 1.5em;
+        line-height: 1.2em;
       }
 
       .descr-text {
@@ -346,6 +361,10 @@
       }
 
       .hiro__hiro-button {
+        max-height: 56px;
+      }
+
+      .hiro__hiro-button {
         margin-bottom: 24px;
       }
 
@@ -383,3 +402,5 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {}

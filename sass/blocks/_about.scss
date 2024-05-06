@@ -82,7 +82,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .about {
     background-image: none;
     margin-bottom: 48px;
@@ -94,7 +94,10 @@
 
     .about__image {
       display: block;
-      padding-left: 20px;
+    }
+
+    .about-element {
+      display: none;
     }
   }
 }

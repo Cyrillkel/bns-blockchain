@@ -133,7 +133,7 @@ a:hover {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1253px;
+  max-width: 1200px;
 }
 
 .title {
@@ -156,6 +156,12 @@ a:hover {
   display: none;
 }
 
+@media screen and (max-width: 1450) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -176,10 +182,25 @@ a:hover {
     line-height: 1.5em;
   }
 
+  .wrapper {
+    max-width: 768px;
+  }
 
   .container {
-    max-width: 768px;
-    margin: 0 auto;
+    max-width: 720px;
   }
 
 }
+
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 576px;
+  }
+
+  .container {
+    max-width: 540px;
+  }
+}
+
+

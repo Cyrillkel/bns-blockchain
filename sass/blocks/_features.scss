@@ -58,11 +58,22 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+  .features__items {
+    grid-template-columns: 1fr;
+  }
+
+  .features__features-bg {
+    bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
 
   .features-container {
     padding: 0 23px;
     margin-bottom: 48px;
+    overflow-x: hidden;
 
     .features__items {
       grid-template-columns: 1fr;
@@ -82,7 +93,7 @@
       min-width: 1000px;
       background-size: cover;
       bottom: 440px;
-      left: -50px
+      left: 0;
     }
 
     .features__element-bottom {

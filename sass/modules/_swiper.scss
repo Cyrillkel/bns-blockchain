@@ -2,13 +2,11 @@
   position: relative;
 }
 
-
 .swiper-wrapper {
   margin-bottom: 58px;
 }
 
 .swiper-slide {
-
   max-width: 444px;
   max-height: 564px;
   min-width: 444px;
@@ -47,6 +45,7 @@
   /* Центрируем по горизонтали */
   transform: translateX(-50%);
   /* Центрируем по горизонтали */
+  z-index: 1 !important;
 }
 
 .swiper-pagination-bullet {
@@ -90,8 +89,8 @@
     min-height: 480px;
     padding: 8px 8px 24px 8px;
     position: relative;
-    border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
   }
 
   .swiper-pagination {
