@@ -90,12 +90,15 @@
 .video {
   position: absolute;
   width: 100%;
-  background: url('/img/presentation/Play.svg') no-repeat center;
+  background: url('../img/presentation/Play.svg') no-repeat center;
   background-size: 10%;
   height: 100%;
   transition: ease-in-out .3s;
 }
 
+.video-link {
+  background-color: red;
+}
 
 .video:hover {
   cursor: pointer;
@@ -105,8 +108,6 @@
 @media screen and (max-width: 576px) {
   .presentation-container {
     margin: 0 auto;
-
-    .presentation__title {}
 
     .video-container {
       rotate: 90deg;
@@ -140,17 +141,31 @@
 
 
       .video {
-        position: absolute;
         width: 100%;
-        background: url('/img/presentation/Play.svg') no-repeat center;
-        background-size: 20%;
         height: 100%;
+        background: none;
+        /* чтобы скрыть часть элемента, выходящую за границы родителя */
+      }
+
+      .video::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(35deg);
+        /* поворачиваем элемент на 35 градусов */
+        width: 20%;
+        /* ширина элемента, если нужно, задайте своё значение */
+        height: 100%;
+        /* высота элемента, если нужно, задайте своё значение */
+        background: url('../img/presentation/Play.svg') no-repeat center;
+        background-size: contain;
+        /* чтобы изображение занимало все доступное пространство */
         transition: ease-in-out .3s;
       }
 
       .video:hover {
-        cursor: pointer;
-        background-size: 12%;
+        background-size: 0;
       }
     }
   }

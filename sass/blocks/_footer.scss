@@ -23,6 +23,12 @@
   margin-bottom: 1px;
 }
 
+@media screen and (max-width: 756px) {
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .footer-container {
     display: flex;

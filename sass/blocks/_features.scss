@@ -68,6 +68,22 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .features__element-top {
+    position: absolute;
+    width: 70%;
+    bottom: 180px;
+    left: 100px;
+  }
+  .features__element-bottom {
+    min-width: 700px;
+    background-size: cover;
+    bottom: 0px;
+    right: -30px;
+  }
+}
+
+
 @media screen and (max-width: 576px) {
 
   .features-container {
@@ -94,14 +110,6 @@
       background-size: cover;
       bottom: 440px;
       left: 0;
-    }
-
-    .features__element-bottom {
-      position: absolute;
-      min-width: 800px;
-      background-size: cover;
-      bottom: 0px;
-      right: -30px;
     }
 
     .button-join {

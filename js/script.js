@@ -1,27 +1,26 @@
-window.addEventListener("DOMContentLoaded", function () {
-  let video = document.querySelector(".video");
+// window.addEventListener("DOMContentLoaded", function () {
+//   let video = document.querySelector(".video");
 
-  video.addEventListener("click", function () {
-    if (video.classList.contains("ready")) {
-      return;
-    }
-    video.classList.add("ready");
+//   video.addEventListener("click", function () {
+//     if (video.classList.contains("ready")) {
+//       return;
+//     }
+//     video.classList.add("ready");
 
-    let src = video.dataset.src + "?autoplay=1";
+//     let src = video.dataset.src + "?autoplay=1";
 
-    video.insertAdjacentHTML(
-      "afterbegin",
-      `<iframe width="560" height="315" src="` +
-        src +
-        `" allowfullscreen></iframe>`
-    );
-  });
-});
+//     video.insertAdjacentHTML(
+//       "afterbegin",
+//       `<iframe width="560" height="315" src="` +
+//         src +
+//         `" allowfullscreen></iframe>`
+//     );
+//   });
+// });
 
 // speed scroll links menu
 
 const anchors = document.querySelectorAll('a[href*="#"]');
-
 
 var links = document.querySelectorAll(".menu__list a");
 console.log(links);
@@ -49,8 +48,6 @@ links.forEach(function (link) {
   });
 });
 
-
-
 // mobile menu
 
 const menu = document.querySelector(".menu__body");
@@ -76,6 +73,3 @@ menuLinks.forEach((link) => {
     body.classList.remove("lock");
   });
 });
-
-// =====================
-

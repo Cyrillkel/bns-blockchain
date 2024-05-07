@@ -165,13 +165,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 
-  .desktop {
-    display: none;
-  }
 
-  .mobile {
-    display: block;
-  }
 
   .title {
     font-size: 1.5em;
@@ -187,13 +181,22 @@ a:hover {
   }
 
   .container {
-    max-width: 720px;
+    max-width: 750px;
+    padding: 0 5px;
   }
 
 }
 
 
 @media screen and (max-width: 576px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
   .wrapper {
     max-width: 576px;
   }
@@ -201,6 +204,8 @@ a:hover {
   .container {
     max-width: 540px;
   }
+
 }
+
 
 

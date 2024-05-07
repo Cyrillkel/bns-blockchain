@@ -78,9 +78,27 @@
 
 @media screen and (max-width: 1200px) {
   .roadmap .roadmap__element-top {
-    left: 10%;
+    left: 0;
   }
+}
 
+@media screen and (max-width: 768px) {
+  .roadmap {
+    .roadmap-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .roadmap__element-top {
+      left: -1%;
+    }
+
+    .roadmap__logo {
+      position: relative;
+      max-width: 250px;
+      top: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -96,6 +114,7 @@
 
       .roadmap__bg {
         left: 0;
+        top: 10px;
       }
 
       .roadmap__element {

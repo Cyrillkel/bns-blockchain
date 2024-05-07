@@ -14,7 +14,7 @@
     padding-bottom: 10x;
 
     .application-card__img {
-      background-image: url('../../img/application/application-bg.png');
+      background-image: url('../img/application/application-bg.png');
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -83,6 +83,9 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  
+}
 
 @media screen and (max-width: 576px) {
   .application {
@@ -97,7 +100,7 @@
         grid-gap: 12px;
 
         .application-card__img {
-          background-image: url('../../img/application/background-m.png');
+          background-image: url('../img/application/background-m.png');
         }
 
         .application-card__title {
@@ -106,6 +109,7 @@
 
         .application-card__description ul {
           font-size: 0.75em;
+          gap: 7px;
         }
       }
     }

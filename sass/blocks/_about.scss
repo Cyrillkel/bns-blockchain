@@ -1,5 +1,5 @@
 .about {
-  background-image: url('../../img/about/about-bg.png');
+  background-image: url('../img/about/about-bg.png');
   // min-height: calc(100vh - 200px);
   background-position: center bottom calc(50% + 80%);
   background-repeat: no-repeat;
@@ -82,10 +82,12 @@
   display: none;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 992px) {
+
   .about {
     background-image: none;
     margin-bottom: 48px;
+
 
     .about__items {
       grid-template-columns: 1fr;
@@ -94,6 +96,8 @@
 
     .about__image {
       display: block;
+      background-position-y: 50%;
+      width: 100%;
     }
 
     .about-element {
@@ -101,3 +105,5 @@
     }
   }
 }
+
+@media screen and (max-width: 576px) {}

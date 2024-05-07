@@ -5,14 +5,12 @@
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 900px;
-  background: url('../../img/header/header-bg.png');
+  background: url('../img/header/header-bg.png');
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: contain;
   padding-top: 40px;
 }
-
-
 
 .hiro__hiro-top {
   font-size: 2.25em;
@@ -80,8 +78,6 @@
 
 // button
 
-.wrapper-btn {}
-
 .wrapper-btn:hover {
   filter: drop-shadow(0px 0px 20px #1A3BCC);
 }
@@ -89,7 +85,7 @@
 .button-join {
   min-width: 192px;
   min-height: 64px;
-  background-image: url('../../img/header/btn-join.svg');
+  background-image: url('../img/header/btn-join.svg');
   clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +96,7 @@
   min-width: 192px;
   min-height: 64px;
   clip-path: polygon(0% 0%, 88.281% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 10.677% 100%, 0% 71.875%, 0% 0%);
-  background-image: url('../../img/header/btn-whitepaper.svg');
+  background-image: url('../img/header/btn-whitepaper.svg');
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
@@ -136,7 +132,7 @@
   min-width: 270px;
   min-height: 64px;
   clip-path: polygon(0% 0%, 92.407% 0%, 100% 27.344%, 100% 100%, 90.104% 100%, 90.104% 93.75%, 77.083% 93.75%, 77.083% 100%, 6.296% 100%, 0% 71.875%, 0% 0%);
-  background-image: url('../../img/header/btn-video.svg');
+  background-image: url('../img/header/btn-video.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -250,47 +246,72 @@
   }
 }
 
-@media screen and (max-width: 992px) {}
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .hiro {
-    background-image: url('../../img/header/mobile-bg-1.png');
-    background-size: cover;
-    background-position: 50% 20%;
+    min-height: 802px;
+  }
+
+  .hiro__shape-right {
+    top: -64px;
+    left: 104px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hiro {
+    background-position: 50% 50%;
 
     .hiro-container {
-
       .element-mobile {
         display: block;
       }
 
-      .hiro__el-m-left {
-        position: absolute;
-        bottom: -110px;
-        left: 10px;
-        z-index: 1;
+      .hiro__hiro-top {
+        font-size: 1.8em;
+        margin-bottom: 20px;
       }
 
-      .hiro__el-m-right {
-        position: absolute;
-        bottom: -60px;
-        right: 1px;
+      .hiro__ellipse-right {
+        right: -450px;
+        z-index: -2;
       }
 
-      .hiro__elemets-square-m {
-        position: absolute;
-        bottom: -80px;
-        left: 40px;
-
+      .hiro__ellipse-right-second {
+        right: 0px;
       }
 
-      .hiro__ellipse-m {
-        position: absolute;
-        bottom: -90px;
-        right: 80px;
-        z-index: -1;
+      .hiro__shape-right {
+        top: 172px;
       }
 
+      .hiro__shape-left {
+        top: 122px;
+      }
+
+      .hiro__hiro-buttons {
+        gap: 5px;
+      }
+    }
+  }
+}
+
+
+
+//mobile
+@media screen and (max-width: 576px) {
+  .hiro {
+    background-image: url('../img/header/mobile-bg-1.png');
+    background-size: cover;
+    background-position: 50% 25%;
+
+    .hiro-container {
+      min-height: 823px;
+      margin-bottom: 100px;
+
+
+      .element-mobile {
+        display: block;
+      }
 
       .hiro__hiro-top {
         font-size: 1.5em;
@@ -298,8 +319,8 @@
       }
 
       .hiro-top__item {
-        max-width: 320px;
         position: relative;
+        max-width: 320px;
       }
 
       .hiro__hiro-title {
@@ -311,8 +332,8 @@
 
       .hiro-top__item>.hiro__hiro-icon:first-child {
         position: absolute;
-        left: -30px;
         top: 1px;
+        left: -33px;
       }
 
       .title-descr {
@@ -337,7 +358,7 @@
       .hiro__hiro-icon:last-child {
         position: absolute;
         left: -5px;
-        bottom: -1px;
+        bottom: -3px;
       }
 
 
@@ -376,31 +397,18 @@
         font-size: 1em;
       }
 
+
       .button-video {
         min-width: 192px;
       }
 
-      .hiro__bg-elements {
-        display: none;
-      }
-
-      .hiro__ellipse-left {
-        display: none;
-      }
-
-      .hiro__ellipse-center {
-        display: none;
-      }
-
-      .hiro__ellipse-right {
-        display: none;
-      }
-
+      .hiro__bg-elements,
+      .hiro__ellipse-left,
+      .hiro__ellipse-center,
+      .hiro__ellipse-right,
       .hiro__ellipse-right-second {
         display: none;
       }
     }
   }
 }
-
-@media screen and (max-width: 576px) {}
