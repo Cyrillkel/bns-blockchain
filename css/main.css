@@ -524,7 +524,6 @@ a:hover {
 .hiro {
   display: flex;
   flex-direction: column;
-  position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 900px;
@@ -533,6 +532,13 @@ a:hover {
   background-position: 50% 0%;
   background-size: contain;
   padding-top: 40px;
+}
+
+.hiro-container {
+  position: relative;
+}
+.hiro-container .hiro__bg {
+  position: absolute;
 }
 
 .hiro__hiro-top {
