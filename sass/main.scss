@@ -1,0 +1,21 @@
+@import './base/_reset';
+@import './base/_vars';
+@import './base/_base';
+
+
+// Block
+@import './blocks/header';
+@import './blocks/hiro';
+@import './blocks/about';
+@import './blocks/advantages';
+@import './blocks/ecosystem';
+@import './blocks/decentral';
+@import './blocks/features';
+@import './blocks/application';
+@import './blocks/presentation';
+@import './blocks/roadmap';
+@import './blocks/contacts';
+@import './blocks/footer';
+
+// Modules 
+@import './modules/swiper';
