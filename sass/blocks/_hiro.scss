@@ -12,6 +12,24 @@
   padding-top: 40px;
 }
 
+// .hiro-container::after {
+//   position: absolute;
+//   content: '';
+//   max-width: 500px;
+//   max-height: 800px;
+//   width: 100%;
+//   height: 100%;
+//   // height: 350px;
+//   background-color: #0B185F;
+//   border-radius: 50%;
+//   opacity: 0.6;
+//   right: 65%;
+//   bottom: 0;
+//   z-index: -5;
+//   filter: brightness(70%) blur(50px);
+//   /* Объединяем фильтры */
+// }
+
 .hiro__hiro-top {
   font-size: 2.25em;
   font-family: "Gilroy";
@@ -102,11 +120,6 @@
   z-index: 0;
 }
 
-// .button-whitepaper>.btn-title {
-//   filter: drop-shadow(0px 0px 150px #1A3BCC) brightness(150%);
-//   position: relative;
-// }
-
 .hiro__hiro-buttons {
   position: relative;
 }
@@ -149,11 +162,6 @@
   text-transform: uppercase;
 }
 
-// .hiro__hiro-button {
-//   padding: 0;
-//   margin: 0;
-// }
-
 .hiro-container {
   position: relative;
   width: 100%;
@@ -164,8 +172,6 @@
   top: 50%;
   left: 45px;
   z-index: -2;
-  // width: 100%;
-  // height: auto;
 }
 
 .hiro__ellipse-left {
@@ -174,9 +180,8 @@
   left: -450px;
   bottom: 0;
   z-index: -1;
-  // overflow-y: hidden;
-  // width: 100%;
-  // height: auto;
+  filter: brightness(80%);
+  filter: blur(60%);
 }
 
 .hiro__ellipse-center {
@@ -186,8 +191,8 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  // width: 100%;
-  // height: auto;
+  filter: brightness(80%);
+  filter: blur(60%);
 }
 
 .hiro__ellipse-right {
@@ -197,8 +202,8 @@
   bottom: 300px;
   opacity: 0.9;
   z-index: 0;
-  // width: 100%;
-  // height: auto;
+  filter: brightness(75%);
+  filter: blur(70%);
 }
 
 .hiro__ellipse-right-second {
@@ -206,12 +211,11 @@
   top: -170px;
   right: -700px;
   bottom: 300px;
-  // width: 100%;
-  // height: auto;
   opacity: 0.9;
   z-index: 0;
   opacity: 0.5;
-  // overflow-y: hidden;
+  filter: brightness(85%);
+  filter: blur(70%);
 }
 
 .hiro__shape-right {
@@ -231,6 +235,13 @@
   right: 50px;
   z-index: -2;
 }
+
+// .hiro__ellipse-left,
+// .hiro__ellipse-right,
+// .hiro__ellipse-center .hiro__ellipse-right-second,
+//  {
+//   pointer-events: none;
+// }
 
 .hiro__btn-presentation-mobile {
   display: none;
